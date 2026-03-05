@@ -20,7 +20,7 @@ content:
 ui:
   bundle:
     # Use the pre-built Antora Dark Theme bundle
-    url: https://github.com/the-dev-center/antora-dark-theme/releases/latest/download/ui-bundle.zip
+    url: https://github.com/antora-supplemental/antora-dark-theme/releases/latest/download/ui-bundle.zip
     snapshot: true
 
 output:

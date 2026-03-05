@@ -13,7 +13,7 @@ This theme layers on top of the {url-antora-ui}[Antora Default UI] without requi
 
 image::https://img.shields.io/badge/license-MIT-blue.svg[License: MIT]
 image::https://img.shields.io/badge/antora-3.x-purple.svg[Antora 3.x]
-image::https://github.com/asciidoc-supplemental/antora-dark-theme/actions/workflows/deploy.yml/badge.svg[Build Status,link=https://github.com/asciidoc-supplemental/antora-dark-theme/actions/workflows/deploy.yml]
+image::https://github.com/antora-supplemental/antora-dark-theme/actions/workflows/deploy.yml/badge.svg[Build Status,link=https://github.com/antora-supplemental/antora-dark-theme/actions/workflows/deploy.yml]
 
 toc::[]
 
@@ -47,7 +47,7 @@ The easiest way to use this theme is to point your Antora playbook directly to t
 ----
 ui:
   bundle:
-    url: https://github.com/asciidoc-supplemental/antora-dark-theme/releases/latest/download/ui-bundle.zip
+    url: https://github.com/antora-supplemental/antora-dark-theme/releases/latest/download/ui-bundle.zip
     snapshot: true
 ----
 

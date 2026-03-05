@@ -3,7 +3,7 @@
 
 site:
   title: Antora Dark Theme
-  url: https://devcentr.github.io/antora-dark-theme
+  url: https://antora-supplemental.github.io/antora-dark-theme
   start_page: antora-dark-theme:guide:index.adoc
 
 content:

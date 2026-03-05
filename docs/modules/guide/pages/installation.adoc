@@ -15,24 +15,24 @@ pnpm::
 [source,bash]
 ----
 # Latest version
-pnpm add -D github:asciidoc-supplemental/antora-dark-theme
+pnpm add -D github:antora-supplemental/antora-dark-theme
 
 # Specific version
-pnpm add -D github:asciidoc-supplemental/antora-dark-theme#v0.1.0
+pnpm add -D github:antora-supplemental/antora-dark-theme#v0.1.0
 ----
 
 npm::
 +
 [source,bash]
 ----
-npm install --save-dev github:asciidoc-supplemental/antora-dark-theme
+npm install --save-dev github:antora-supplemental/antora-dark-theme
 ----
 
 yarn::
 +
 [source,bash]
 ----
-yarn add -D github:asciidoc-supplemental/antora-dark-theme
+yarn add -D github:antora-supplemental/antora-dark-theme
 ----
 ====
 
@@ -87,21 +87,21 @@ pnpm::
 +
 [source,bash]
 ----
-pnpm add -D https://github.com/asciidoc-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
+pnpm add -D https://github.com/antora-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
 ----
 
 npm::
 +
 [source,bash]
 ----
-npm install --save-dev https://github.com/asciidoc-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
+npm install --save-dev https://github.com/antora-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
 ----
 
 yarn::
 +
 [source,bash]
 ----
-yarn add -D https://github.com/asciidoc-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
+yarn add -D https://github.com/antora-supplemental/antora-dark-theme/releases/download/v0.1.0/antora-dark-theme-0.1.0.tgz
 ----
 ====
 
