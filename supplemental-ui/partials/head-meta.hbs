@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="{{{uiRootPath}}}/css/site-extra.css">
+{{#if page.origin.webUrl}}
+<meta name="antora-repo-url" content="{{page.origin.webUrl}}">
+{{/if}}
 <script>
 (function () {
   const themeKey = 'antora-theme';

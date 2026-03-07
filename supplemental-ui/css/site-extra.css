@@ -30,18 +30,21 @@ html.dark-theme .navbar .navbar-link:hover {
   background-color: #1f2125;
 }
 
+/* Topbar nav area matches navbar for consistent strip (like light theme) */
 html.dark-theme .navbar .navbar-menu {
-  background-color: #25262b;
+  background-color: #141517;
   border-color: #373a40;
 }
 
+/* Dropdown panel distinct from navbar so it reads as a menu */
 html.dark-theme .navbar .navbar-dropdown {
   background-color: #25262b;
   border-color: #373a40;
 }
 
+/* Dropdown item hover same as regular navbar item hover */
 html.dark-theme .navbar .navbar-dropdown .navbar-item:hover {
-  background-color: #2c2e33;
+  background-color: #1f2125;
 }
 
 html.dark-theme .navbar .button,
@@ -435,6 +438,40 @@ html.dark-theme .home-link {
 .theme-toggle .theme-icon path,
 .theme-toggle .theme-icon circle {
   fill: none;
+}
+
+/* VCS repo logo (replaces nonfunctional Download button) */
+.navbar .vcs-repo-logo {
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .vcs-repo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.navbar .vcs-repo-link:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+html.dark-theme .navbar .vcs-repo-link:hover {
+  background-color: #1f2125;
+}
+
+.navbar .vcs-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
 }
 
 /* Dark mode icon fixes for navigation panels */

@@ -43,7 +43,7 @@ jobs:
         run: pnpm install
 
       - name: Build Antora site
-        run: pnpm build:online
+        run: pnpm build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

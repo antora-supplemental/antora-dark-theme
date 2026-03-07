@@ -1,5 +1,5 @@
-# Antora Playbook for online builds
-# This playbook refreshes remote assets before generating the site.
+# Antora Playbook (local / offline)
+# Uses locally cached remote assets when available.
 
 site:
   title: Antora Dark Theme
@@ -22,7 +22,7 @@ output:
   dir: ./build/site
 
 runtime:
-  fetch: true
+  fetch: false
 
 asciidoc:
   extensions:

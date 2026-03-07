@@ -24,8 +24,8 @@
   ],
   "scripts": {
     "build": "antora antora-playbook.yml",
-    "build:online": "antora antora-playbook-online.yml",
-    "preview": "antora antora-playbook-online.yml",
+    "build:local": "antora antora-playbook-local.yml",
+    "preview": "antora antora-playbook.yml",
     "serve": "pnpm build && npx http-server build/site -p 8080 -o",
     "clean": "rimraf build .cache"
   },

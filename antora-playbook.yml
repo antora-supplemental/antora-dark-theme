@@ -1,5 +1,5 @@
-# Antora Playbook for offline or cached builds
-# This playbook uses locally cached remote assets when available.
+# Antora Playbook (online / production)
+# Refreshes remote assets before generating the site. Use for CI and deploy.
 
 site:
   title: Antora Dark Theme
@@ -22,7 +22,7 @@ output:
   dir: ./build/site
 
 runtime:
-  fetch: false
+  fetch: true
 
 asciidoc:
   extensions:
@@ -30,4 +30,3 @@ asciidoc:
   attributes:
     source-highlighter: highlight.js
     icons: font
-

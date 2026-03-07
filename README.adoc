@@ -25,6 +25,7 @@ toc::[]
 * **No FOUC (Flash of Unstyled Content)** - Dark mode is applied before page render via inline script
 * **Non-invasive** - Works as a supplemental UI overlay; no need to fork or rebuild the Antora default UI bundle
 * **Comprehensive styling** - Covers navbar, navigation panels, content area, code blocks, tables, admonition blocks, footer, and more
+* **VCS repo logo** - Replaces the default UI's nonfunctional "Download" button with a version-control provider logo (GitHub, GitLab, Bitbucket, Gitea, Codeberg, Forgejo, SourceHut) that links to the docs repository; provider is detected by domain
 
 == Help Get Dark Mode into Antora
 
@@ -146,7 +147,8 @@ antora-dark-theme/
 │   └── antora-playbook-local.yml # Example playbook (direct copy)
 ├── .github/workflows/
 │   └── deploy.yml              # GitHub Pages deployment
-├── antora-playbook.yml         # Playbook for building demo site
+├── antora-playbook.yml         # Playbook for demo site (online / CI)
+├── antora-playbook-local.yml  # Local playbook (cached assets, no fetch)
 ├── package.json
 ├── LICENSE
 └── README.adoc
@@ -346,5 +348,6 @@ See the link:LICENSE[LICENSE] file for details.
 
 * The {url-antora}[Antora] team for creating an excellent documentation site generator
 * The {url-antora-ui}[Antora Default UI] which this theme extends
+* https://fossil-scm.org[Fossil SCM] — acknowledged as a solid alternative to Git for version control; see the docs for a short discourse and plans for Dev-Centr support
 
 
