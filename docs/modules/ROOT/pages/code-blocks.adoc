@@ -222,6 +222,7 @@ It preserves all formatting
 == Listing Block
 
 The following commands install the theme, run the playbook, and start a local server.
+
 Use the tab that matches your package manager.
 
 [tabs]
