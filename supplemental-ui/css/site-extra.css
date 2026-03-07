@@ -59,9 +59,15 @@ html.dark-theme .navbar .button.is-primary:hover {
 html.dark-theme .nav,
 html.dark-theme .nav-panel-menu,
 html.dark-theme .nav-panel-explore,
-html.dark-theme .toolbar,
-html.dark-theme .toc.sidebar {
+html.dark-theme .toolbar {
   background-color: #25262b;
+  border-color: #373a40;
+  color: #c1c2c5;
+}
+
+/* TOC sidebar transparent so it inherits page background (easier to theme) */
+html.dark-theme .toc.sidebar {
+  background-color: transparent;
   border-color: #373a40;
   color: #c1c2c5;
 }
