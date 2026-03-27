@@ -51,8 +51,11 @@ jobs:
 
           # Try to extract changelog section for this version, or use default message
           if [ -f "CHANGELOG.adoc" ]; then
-            # Extract section between this version and next version header
-            NOTES=$(awk "/^== $VERSION/,/^== [0-9]/" CHANGELOG.adoc | head -n -1 | tail -n +2)
+            # Headings are "== [X.Y.Z] - date"; extract body until the next "== [" section
+            NOTES=$(awk -v v="$VERSION" '
+              $0 ~ "^== \\[" v "\\]" {flag=1; next}
+              flag && /^== \[/ {exit}
+              flag {print}' CHANGELOG.adoc)
             if [ -z "$NOTES" ]; then
               NOTES="Release v$VERSION"
             fi

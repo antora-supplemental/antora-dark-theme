@@ -1,0 +1,20 @@
+= 2026-01-29 — 0.1.0 initial release
+
+== Added
+
+* Initial release
+* Dark mode toggle button with sun/moon icons
+* Comprehensive CSS styling for Antora default UI components:
+** Navbar and navigation panels
+** Content area and documentation
+** Code blocks and syntax highlighting containers
+** Tables
+** Admonition blocks (NOTE, TIP, WARNING, etc.)
+** Sidebar and table of contents
+** Footer
+** Search input
+* System preference detection (`prefers-color-scheme: dark`)
+* Persistent theme preference via `localStorage`
+* FOUC (Flash of Unstyled Content) prevention
+* Example Antora playbook configurations
+* Full documentation with customization guide
