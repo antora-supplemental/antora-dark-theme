@@ -6,7 +6,7 @@ There are several ways to add the dark theme to your Antora project.
 
 == Which installation path should I use?
 
-* **If your project already uses Node/npm/pnpm** (common for Antora sites) — Prefer *Method 1* (npm registry) or *Method 2* (GitHub as a package dependency). Both keep the theme in your package graph and lockfile.
+* **If your project already uses Node/npm/pnpm** (common for Antora sites) — Prefer *Method 1* (npm registry) or *Method 2* (GitHub as a package dependency). Both keep the theme in your package graph and lockfile. For custom supplemental UI on top of this theme, merge into a single directory or use virtual files (see <<override-theme>>).
 * **If you want no JavaScript install step** (minimal CI, or a repo without Node) — Use *Method 3* (pre-built `ui-bundle.zip`).
 
 == Method 1: npm registry (recommended)
@@ -55,7 +55,13 @@ ui:
   supplemental_files: ./node_modules/antora-dark-theme/supplemental-ui
 ----
 
-To layer your own supplemental UI after this theme, use an array; later paths win:
+[[override-theme]]
+=== Adding your own supplemental UI on top of this theme
+
+Antora’s `ui.supplemental_files` accepts *either* a single filesystem directory *or* an array of https://docs.antora.org/antora/latest/playbook/ui-supplemental-files[virtual files] (`path` + `contents`).
+You cannot list multiple directories in the YAML array.
+
+*Merged directory (recommended):* Copy `node_modules/antora-dark-theme/supplemental-ui` into your project (for example `supplemental-ui/`), merge your `partials/`, `css/`, and other assets, then set `supplemental_files` to that *one* path:
 
 [source,yaml]
 ----
@@ -63,10 +69,10 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
-  supplemental_files:
-    - ./node_modules/antora-dark-theme/supplemental-ui
-    - ./site/src
+  supplemental_files: ./supplemental-ui
 ----
+
+*Pre-built theme bundle + virtual files:* If you use the release `ui-bundle.zip`, the theme is already in the bundle; add only virtual `supplemental_files` entries for extra assets (see the Antora docs linked above).
 
 == Method 2: Install from GitHub as a package dependency
 
