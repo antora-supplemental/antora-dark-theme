@@ -1,5 +1,0 @@
-= Navbar dropdown link spacing
-
-The supplemental stylesheet had overridden `.navbar .navbar-link` with `padding-right: 2.25rem`, which pulled the dropdown caret closer to the label than the Antora default UI bundle (`.navbar-link { padding-right: 2.5em }` in bundled `site.css`).
-
-That block was removed so dropdown labels keep the same text-to-caret spacing as stock Antora UI.
